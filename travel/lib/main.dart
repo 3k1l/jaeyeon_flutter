@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel/login.dart';
 
 void main() => runApp(MyApp());
 
@@ -6,14 +7,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("travel app"),
-        ),
-        body: Center(
-          child: Text('travel'),
-        ),
-      ),
+      title: 'tour',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Temp(),
+        '/sign' :(context) => Temp(),
+      },
     );
+  }
+}
+
+class Temp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
