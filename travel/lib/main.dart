@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       title: 'tour',
       initialRoute: '/',
       routes: {
-        '/': (context) => Temp(),
+        '/': (context) => LoginPage(),
         '/sign' :(context) => Temp(),
       },
     );
