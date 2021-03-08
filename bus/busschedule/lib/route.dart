@@ -8,14 +8,12 @@ class SecondRoute extends StatelessWidget {
       appBar: AppBar(
         title: Text("Second Route"),
       ),
-      body: Center(
-        child: RaisedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('Go back!'),
-        ),
-      ),
+      body: Column(
+        children: [
+          Expanded(child: null),
+          Expanded(child: null),
+        ],
+      )
     );
   }
 }
